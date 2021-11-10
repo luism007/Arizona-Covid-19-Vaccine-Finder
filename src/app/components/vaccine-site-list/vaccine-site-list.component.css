@@ -1,0 +1,94 @@
+.dataViewContainer { 
+    height: 100% !important;
+    overflow: auto;
+}
+
+.vaccine-list { 
+    background-color: #f7f7f7;
+}
+
+.list-container { 
+    height: 100% !important;
+}
+
+.input-container { 
+    width: 60% !important;
+}
+
+.filter-container { 
+    width: 40%;
+}
+
+.main-display-spinner-container { 
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important;
+    height: 100% !important;
+}
+
+.display-spinner-container { 
+    margin: 0 auto;
+}
+
+.display-spinner-text-container { 
+    margin: 0 auto;
+}
+
+.spinner-text { 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+::ng-deep .p-virtualscroller .p-virtualscroller-content { 
+    background-color: #f7f7f7 !important;
+}
+
+::ng-deep .p-dataview { 
+    height: 100% !important;
+}
+::ng-deep .p-dataview-header { 
+    display: flex;
+    flex-flow: row;
+}
+::ng-deep .p-dataview-content { 
+    background-color: #f8f9fa !important;
+    height: 80% !important;
+    overflow-y: scroll;
+}
+
+::ng-deep .p-input-icon-left>i { 
+    top: 40% !important;
+}
+
+:host ::ng-deep .p-accordion .p-accordion-content { 
+    background-color: #f8f9fa !important;
+}
+
+:host ::ng-deep .p-paginator { 
+    background-color: #f8f9fa;
+}
+
+:host ::ng-deep .p-inputtext { 
+    width: 70% !important;
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+

@@ -1,0 +1,31 @@
+
+.app-container { 
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+.nav-container { 
+    margin: 0;
+    padding: 0;
+    height: 7%;
+}
+.nav-bar { 
+    background-color: #b33022;
+    height: 100%;
+}
+.nav-list { 
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+
+}
+.nav-list-item { 
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 2%;
+}
+.app-body-container { 
+    height: 93%;
+}

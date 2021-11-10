@@ -1,0 +1,21 @@
+<div class="county-filter-main-container">
+    <div class="county-filter-inner-container" *ngIf = "countiesRetrieved === true; else showProgressBar">
+        <!-- <div class="county-filter-switch-container">
+            <p class="switch-label"> Save County Filter? </p>
+            <p-inputSwitch (onChange) = "handleSwitchChange($event)"></p-inputSwitch>
+        </div> -->
+        <div class="county-filter-dropdown-container">
+            <p-multiSelect [options]="counties" optionLabel="name" defaultLabel = "Filter By A County" (onClick) = "handleDropdown($event)" (onChange) = "handleFilterChange($event)"></p-multiSelect>
+        </div>
+    </div>
+    <ng-template #showProgressBar>
+        <div class="county-filter-progress-container">
+            <h1 class="retrieiving-counties-label">Retrieving Counties ... </h1>
+            <p-progressBar mode="indeterminate" [style]="{'height': '2px'}"></p-progressBar>
+        </div>
+    </ng-template>
+</div>
+
+    <!-- <p-inputSwitch (onChange) = "handleSwitchChange($event)"></p-inputSwitch>
+
+    <p-multiSelect [options]="counties" optionLabel="name" defaultLabel = "Filter By A County" (onClick) = "handleDropdown($event)"></p-multiSelect> -->

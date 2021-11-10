@@ -1,0 +1,28 @@
+
+.county-filter-main-container { 
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+ 
+.county-filter-inner-container { 
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+}
+
+.county-filter-switch-container, .county-filter-switch-container { 
+    margin: 0 5%;
+}
+
+.county-filter-switch-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-label { 
+    margin: 0 0 1px 0;
+    font-size: .85em;
+}

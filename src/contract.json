@@ -1,0 +1,27 @@
+{
+    "available": [
+    {
+    "id": 1,
+    "name": "Frys: Pima Shea",
+    "address": "10450 N 90Th St\nScottsdale, AZ 85258",
+    "addressUrl": "https://www.google.com/maps/place/10450+N+90th+St,+Scottsdale,+AZ+85258",
+    "appointments": [
+    {
+    "date": "Feb 5th",
+    "time": "11:00 am"
+    }
+    ],
+    "lastCheck": "2021-02-01 02:00:00"
+    }
+    ],
+    "unavailable": [
+    {
+    "id": 2,
+    "name": "Frys: Pima Shea",
+    "address": "10450 N 90Th St\nScottsdale, AZ 85258",
+    "addressUrl": "https://www.google.com/maps/place/10450+N+90th+St,+Scottsdale,+AZ+85258",
+    "appointments": [],
+    "lastCheck": "2021-02-01 02:00:00"
+    }
+    ]
+    }

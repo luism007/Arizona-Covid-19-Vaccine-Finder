@@ -1,0 +1,54 @@
+.home-container { 
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+}
+.home-info-container { 
+    display: flex;
+    flex-flow: row;
+}
+
+.info-wrapper { 
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+}
+.info-header { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-p { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-layout { 
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+    width: 30%;
+    max-width: 30%;
+    background-color: white;
+    overflow-y: auto;
+}
+.vaccine-list-container { 
+    width: 70%;
+    margin: 0% auto 0 auto;
+    height: 100% !important;
+}
+
+.content-footer { 
+
+}
+
+@media only screen and (max-width: 770px) { 
+    .content-layout { 
+        display: none;
+    }
+
+    .vaccine-list-container { 
+        width: 100%;
+    }
+}

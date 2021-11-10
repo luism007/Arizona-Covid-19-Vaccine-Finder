@@ -1,0 +1,61 @@
+.vaccine-card-container { 
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.vaccine-card-side-1 { 
+    width: 70%;
+}
+.vaccine-card-side-2 { 
+    display: flex;
+    flex-flow: column;
+    width: 30%
+}
+.vaccine-info-list { 
+    list-style: none;
+    padding-left: 0;
+}
+
+.vaccine-info-list-item { 
+    margin: 5px auto;
+    padding-left: 0;
+}
+
+.map-link { 
+    text-decoration: none;
+    color: #2371e7;
+}
+
+.action-button-container {  
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3px 0;
+}
+
+:host ::ng-deep .p-card .p-card-title { 
+    font-size: 1.85rem;
+    color: black;
+}
+
+:host ::ng-deep .p-card { 
+    margin: 10px auto;
+    width: 95%;
+}
+
+@media only screen and (max-width: 770px) { 
+    .vaccine-card-side-1 { 
+        width: 100%;
+    }
+    .vaccine-card-side-2 { 
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        margin-bottom: 1%;
+        padding: 1%;
+    }
+
+    .action-button-container { 
+        margin: 0 2% 2% 0;
+    }
+}

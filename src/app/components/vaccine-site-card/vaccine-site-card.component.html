@@ -1,0 +1,47 @@
+
+<p-card header = {{vaccineSiteInfo.name}}>
+    <div class="vaccine-card-container">
+        <div class="vaccine-card-side-1">
+            <ul class="vaccine-info-list">
+                <li class="vaccine-info-list-item" *ngIf ="vaccineSiteInfo.appointments.length > 0; else noToolTip">
+                    <a href="{{vaccineSiteInfo.addressUrl}}" target="_blank" class="map-link" pTooltip = "Copy Address For Registration!" tooltipPosition="bottom"> 
+                    {{vaccineSiteInfo.address}}
+                    </a>
+                </li>
+                <ng-template #noToolTip>
+                    <li class="vaccine-info-list-item" >
+                        <a href="{{vaccineSiteInfo.addressUrl}}" target="_blank" class="map-link"> 
+                        {{vaccineSiteInfo.address}}
+                        </a>
+                    </li>
+                </ng-template>
+                <li class="vaccine-info-list-item"> Automatically Checked: {{vaccineSiteInfo.lastCheck | date: 'short' }}</li>
+
+            </ul>
+        </div>
+        <div class="vaccine-card-side-2">
+            <div class="action-button-container">
+                <p-button label = "Go Register" class="p-button-lg" *ngIf ="vaccineSiteInfo.appointments.length > 0" (click) = "goRegister(vaccineSiteInfo)" pTooltip = "Copy Address First!" tooltipPosition="bottom" icon = "pi pi-pencil" iconPos = "right"> </p-button>
+            </div>
+            <div class= "action-button-container">
+                <button pButton type = "button" label = "Get Directions" class="p-button-outlined" icon = "pi pi-map" iconPos = "right" (click) = "getDirections(vaccineSiteInfo)" *ngIf ="vaccineSiteInfo.appointments.length > 0"></button>
+            </div>
+        </div>
+    </div>
+    <!-- <p-divider align = "left"></p-divider> -->
+    <div class="vaccine-appointments-container">
+            <div class="appointments-header">
+                <p-fieldset legend = "View Appointments ({{vaccineSiteInfo.appointments.length}})" [toggleable]="true" *ngIf ="vaccineSiteInfo.appointments.length > 0; else noAppointments">
+                    <ul *ngFor = "let appointment of vaccineSiteInfo.appointments">
+                        <li>
+                            {{appointment.date}}  {{ appointment.time }}
+                        </li>
+                    </ul>
+                </p-fieldset>    
+                <ng-template #noAppointments>
+                    <p class="appointment-header"> No Appointment(s) Available</p>
+                </ng-template>
+            </div>
+
+    </div>
+</p-card>

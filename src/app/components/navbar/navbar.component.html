@@ -1,0 +1,15 @@
+<div class="nav-container">
+    <nav class="nav-bar">
+        <div class="navbrand-container">
+            <span class="navbrand"> AZ COVID-19 Vaccination Sites  </span>
+        </div>
+      <ul class="nav-list">
+        <li class="nav-list-item-more-info">
+            <button pButton type="button" label="Please Read" class="p-button-outlined" (click) = "openSidebar()" [style] = "{backgroundColor: 'white', color: '#b33022'}"></button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <p-sidebar [(visible)] = "displaySidebar" [fullScreen] = "true" [blockScroll] = "true" [style] = "{overflowY: 'scroll'}">
+    <app-site-content-info></app-site-content-info>
+  </p-sidebar>
